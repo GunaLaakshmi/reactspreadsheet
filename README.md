@@ -53,7 +53,5 @@ eslint-plugin-react-dom
 
 All configured through a eslint.config.js file with multiple tsconfig references.
 
-Live Demo
-[![Vercel](https://vercelbadge.vercel.app/api/GunaLaakshmi/reactspreadsheet)](https://reactspreadsheet.vercel.app)
 
 
