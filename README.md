@@ -1,69 +1,59 @@
-# React + TypeScript + Vite
+# 🧮 React Spreadsheet Prototype
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a **Google Sheets/Excel-style interactive spreadsheet UI** built with modern web tools like React, TypeScript, and Vite. Designed to provide a pixel-perfect, dynamic, and keyboard-navigable table experience with column resize/hide features.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- ⚛️ Built with **React 18 + TypeScript + Vite**
+- 🎨 Styled with **Tailwind CSS**
+- 🖱️ **Resizable columns**
+- ⌨️ **Keyboard navigation** (arrow keys)
+- 👁️ Toggle column **show/hide**
+- 🧩 Modular component structure
+- ✅ Integrated ESLint with strict type-safe rules
+- 🌙 Clean UI with toolbar, tabs, search, and filters
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
+## 📦 Tech Stack
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+| Tool            | Purpose                          |
+|-----------------|----------------------------------|
+| React 18        | UI Library                       |
+| TypeScript      | Type Safety                      |
+| Vite            | Fast Frontend Build Tool         |
+| Tailwind CSS    | Utility-first CSS Styling        |
+| ESLint + TSESLint | Code Quality & Linting         |
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🛠️ Setup Instructions
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/GunaLaakshmi/reactspreadsheet.git
+   cd reactspreadsheet
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+ ## Install dependencies
+  npm install
+## Run the development server
+npm run dev
+## Lint your code
+npm run lint
+----------
+## 🧪 Lint Configuration
+We use strict, type-aware ESLint rules with support for React and DOM-specific guidelines:
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+@typescript-eslint
+
+eslint-plugin-react-x
+
+eslint-plugin-react-dom
+
+All configured through a eslint.config.js file with multiple tsconfig references.
+
+Live Demo
+[![Vercel](https://vercelbadge.vercel.app/api/GunaLaakshmi/reactspreadsheet)](https://reactspreadsheet.vercel.app)
+
+
